@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prabhjit Singh Dhillon - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Animation libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <!-- Vanilla Tilt.js for 3D card effect -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  </head>
+  <body>
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <i class="fas fa-layer-group"></i>
+            <span>Prabhjit Singh Dhillon</span>
+          </div>
+          <nav id="nav">
+            <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+            <a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a>
+            <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+            <a href="#open-source" class="nav-link"><i class="fas fa-code-branch"></i> Open Source</a>
+            <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+          </nav>
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+          <div id="particles-js" class="particles-container"></div>
+          <div class="hero">
+            <div class="hero-content">
+              <h1 data-aos="fade-right" data-aos-duration="1000">Hello, I'm <span>Prabhjit Singh Dhillon</span></h1>
+              <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <span id="typing-text"></span>
+              </h2>
+              <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                I build intelligent systems and scalable applications using
+                cutting-edge ML/AI and modern web technologies.
+              </p>
+              <div class="cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <a
+                  href="https://drive.google.com/file/d/1mrIuGa2FjWKaI5q_sBlUUpeym16YhpEk/view?usp=sharing"
+                  class="btn btn-primary"
+                  target="_blank"
+                >Download Resume</a>
+                <a
+                  href="mailto:dhillonprabhjitsingh@gmail.com"
+                  class="btn btn-secondary"
+                >Contact Me</a>
+              </div>
+            </div>
+
+            <!-- Skills Widget -->
+            <div class="skills-widget" data-aos="zoom-in" data-aos-duration="1200">
+              <h3>Tech Stack</h3>
+              <div class="tech-stack-circle" id="animated-orbit">
+                <!-- Stationary center element -->
+                <div class="circle-center">
+                  <div class="pulse"></div>
+                  AI &amp; Dev
+                </div>
+
+                <!-- Rotating orbit container -->
+                <div class="orbit">
+                  <div class="tech-item" style="--i:0;">
+                    <div class="content">
+                      <div class="skill-icon">PY</div>
+                      <span class="skill-name">Python</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:1;">
+                    <div class="content">
+                      <div class="skill-icon">PT</div>
+                      <span class="skill-name">PyTorch</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:2;">
+                    <div class="content">
+                      <div class="skill-icon">TF</div>
+                      <span class="skill-name">TensorFlow</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:3;">
+                    <div class="content">
+                      <div class="skill-icon">R</div>
+                      <span class="skill-name">React</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:4;">
+                    <div class="content">
+                      <div class="skill-icon">N</div>
+                      <span class="skill-name">Node.js</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:5;">
+                    <div class="content">
+                      <div class="skill-icon">TS</div>
+                      <span class="skill-name">TypeScript</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:6;">
+                    <div class="content">
+                      <div class="skill-icon">D</div>
+                      <span class="skill-name">Docker</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:7;">
+                    <div class="content">
+                      <div class="skill-icon">K8s</div>
+                      <span class="skill-name">Kubernetes</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:8;">
+                    <div class="content">
+                      <div class="skill-icon">CV</div>
+                      <span class="skill-name">OpenCV</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:9;">
+                    <div class="content">
+                      <div class="skill-icon">AWS</div>
+                      <span class="skill-name">AWS</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:10;">
+                    <div class="content">
+                      <div class="skill-icon">SQL</div>
+                      <span class="skill-name">SQL</span>
+                    </div>
+                  </div>
+                  <div class="tech-item" style="--i:11;">
+                    <div class="content">
+                      <div class="skill-icon">Go</div>
+                      <span class="skill-name">Go</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+          <div class="title-container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">About Me</h2>
+            <div class="about-awesome-cloud">Cause I am awesome</div>
+          </div>
+          
+          <div class="about-grid">
+            <div class="profile-card">
+              <div class="profile-image">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="Prabhjit Singh Dhillon"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>Prabhjit Singh Dhillon</h3>
+                <p class="profile-location">Machine Learning Engineer</p>
+                <p class="profile-location">Based in Ludhiana, Punjab, India</p>
+                <div class="profile-contact">
+                  <a href="mailto:dhillonprabhjitsingh@gmail.com"
+                    ><i class="fas fa-envelope"></i>
+                    dhillonprabhjitsingh@gmail.com</a
+                  >
+                  <a href="tel:+919056431046"
+                    ><i class="fas fa-phone"></i> +91-9056431046</a
+                  >
+                </div>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/"
+                    class="social-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://linkedin.com/"
+                    class="social-link"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="about-content">
+              <h3>My Journey</h3>
+              <p>
+                I'm a passionate Machine Learning Engineer and Full Stack Developer
+                with a strong foundation in both theoretical and applied aspects of
+                AI and software development. My journey in tech began during my
+                undergraduate studies, where I excelled in dual majors of Computer
+                Science and Applied Mathematics.
+              </p>
+              <p>
+                At Meta (Formerly) Facebook, I built and deployed scalable ML models, optimized
+                real-time detection pipelines, and designed end-to-end ML
+                infrastructure. I'm particularly interested in computer vision,
+                natural language processing, and the optimization of neural networks
+                for real-world applications.
+              </p>
+              <p>
+                I'm also passionate about competitive programming and knowledge
+                sharing, having qualified for ICPC regionals and helped teach data
+                structures and algorithms to juniors as part of the Hoplite CS club.
+              </p>
+              
+              <!-- Hacker Animation -->
+              <div class="hacker-animation-container" data-aos="fade-up" data-aos-duration="800">
+                <div class="terminal">
+                  <div class="terminal-header">
+                    <div class="terminal-buttons">
+                      <span class="terminal-button"></span>
+                      <span class="terminal-button"></span>
+                      <span class="terminal-button"></span>
+                    </div>
+                    <div class="terminal-title">hacker@dev:~</div>
+                  </div>
+                  <div class="terminal-body">
+                    <div class="typewriter-text" id="hackerText"></div>
+                    <div class="cursor-blink">_</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="education">
+                <h3>Education</h3>
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="achievement-details">
+                    <h4
+                      >Bachelor's in Computer Science and Applied Mathematics</h4
+                    >
+                    <p>San Jose State University, CGPA: 3.7/4.0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+          <div class="title-container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Work Experience</h2>
+            <div class="neural-network" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+              <div class="node node-1"></div>
+              <div class="node node-2"></div>
+              <div class="node node-3"></div>
+              <div class="node node-4"></div>
+              <div class="node node-5"></div>
+              <div class="node node-6"></div>
+              <div class="node node-7"></div>
+              <div class="connection connection-1-2"></div>
+              <div class="connection connection-1-3"></div>
+              <div class="connection connection-1-4"></div>
+              <div class="connection connection-2-5"></div>
+              <div class="connection connection-3-5"></div>
+              <div class="connection connection-3-6"></div>
+              <div class="connection connection-4-6"></div>
+              <div class="connection connection-5-7"></div>
+              <div class="connection connection-6-7"></div>
+              <div class="pulse-ring"></div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+              <div class="timeline-line"></div>
+              <div class="timeline-marker"><span class="pulse"></span></div>
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <div style="display: flex; align-items: center;">
+                    <h3>Machine Learning Engineer</h3>
+                    <span class="rubiks-cube-container">
+                      <div class="rubiks-cube">
+                        <div class="cube-face front">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face back">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face right">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face left">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face top">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face bottom">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                      </div>
+                      <div class="scrambled">
+                        <div class="cube-face front">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face back">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face right">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face left">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face top">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                        <div class="cube-face bottom">
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                          <div class="sticker"></div><div class="sticker"></div><div class="sticker"></div>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  <h4>Meta(Formerly Facebook)</h4>
+                </div>
+                <div class="timeline-period">January 2021 - August 2023</div>
+              </div>
+              
+              <div class="timeline-content">
+                <div class="timeline-description">
+                  <ul class="experience-bullets">
+                    <li>Built and deployed scalable ML models for recommendation and classification tasks, optimizing inference latency by 40%.</li>
+                    <li>Designed an end-to-end ML pipeline for large-scale data ingestion, preprocessing, and model deployment.</li>
+                    <li>Integrated DeepSORT tracking and YOLOv5 for multi-camera person tracking, optimizing real-time detection pipelines.</li>
+                    <li>Applied transfer learning and self-supervised learning techniques to improve feature extraction and model generalization.</li>
+                    <li>Supported Senior Staff: Prepared detailed project presentations and reports, aiding senior management in informed decision-making.</li>
+                  </ul>
+                </div>
+                <div class="tags">
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">YOLOv5</span>
+                  <span class="tag">DeepSORT</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Achievement Placards Section -->
+          <div class="achievements-section">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Achievements</h2>
+            <div class="achievement-placards">
+              <div class="achievement-placard" data-aos="flip-left" data-aos-duration="800">
+                <div class="achievement-placard-front">
+                  <div class="achievement-icon">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h3>ICPC Regional Qualifier</h3>
+                  <p class="click-hint">Click to learn more</p>
+                </div>
+                <div class="achievement-placard-back">
+                  <h3>ICPC Regional Qualifier</h3>
+                  <p>Secured college rank 2 and 297 in RL2 (2021). The International Collegiate Programming Contest is the premier global programming competition conducted by and for the world's universities.</p>
+                  <div class="achievement-placard-skills">
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Competitive Coding</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievement-placard" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="achievement-placard-front">
+                  <div class="achievement-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h3>Hoplite CS Club</h3>
+                  <p class="click-hint">Click to learn more</p>
+                </div>
+                <div class="achievement-placard-back">
+                  <h3>Hoplite CS Club</h3>
+                  <p>Active member who taught Data Structures and Algorithms to juniors. Led weekly workshops and helped students improve their problem-solving skills and programming techniques.</p>
+                  <div class="achievement-placard-skills">
+                    <span class="tag">Mentoring</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Teaching</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievement-placard" data-aos="flip-left" data-aos-duration="800" data-aos-delay="400">
+                <div class="achievement-placard-front">
+                  <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                  </div>
+                  <h3>Hackathon - 3rd Prize</h3>
+                  <p class="click-hint">Click to learn more</p>
+                </div>
+                <div class="achievement-placard-back">
+                  <h3>Hackathon - 3rd Prize</h3>
+                  <p>Served as Tech Lead for a project to reduce food wastage. Developed an algorithm enabling local restaurants to donate food to homeless residents within a 5-mile radius.</p>
+                  <div class="achievement-placard-skills">
+                    <span class="tag">Leadership</span>
+                    <span class="tag">Hackathon</span>
+                    <span class="tag">Social Impact</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section - Now a standalone section -->
+        <section id="skills">
+          <div class="title-container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Skills & Technologies</h2>
+            <div class="skills-animation">
+              <div class="gear gear-1"></div>
+              <div class="gear gear-2"></div>
+              <div class="gear gear-3"></div>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800">
+              <div class="skill-category-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">C++</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Go</span>
+                <span class="tag">Java</span>
+                <span class="tag">C#</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="skill-category-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Machine Learning & Deep Learning</h3>
+              <div class="skill-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Scikit-Learn</span>
+                <span class="tag">Hugging Face</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">NLP</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="skill-category-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Data Engineering</h3>
+              <div class="skill-tags">
+                <span class="tag">SQL</span>
+                <span class="tag">Spark</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">AWS S3</span>
+                <span class="tag">BigQuery</span>
+                <span class="tag">Data Structures</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800">
+              <div class="skill-category-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </div>
+              <h3>ML Operations</h3>
+              <div class="skill-tags">
+                <span class="tag">Model Deployment</span>
+                <span class="tag">A/B Testing</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Airflow</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="skill-category-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <h3>Optimization</h3>
+              <div class="skill-tags">
+                <span class="tag">Parallel Computing</span>
+                <span class="tag">GPU Acceleration</span>
+                <span class="tag">CUDA</span>
+                <span class="tag">Model Quantization</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="skill-category-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <div class="skill-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">JSON</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800">
+              <div class="skill-category-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Development Tools</h3>
+              <div class="skill-tags">
+                <span class="tag">Git</span>
+                <span class="tag">Jupyter</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Buffer</span>
+                <span class="tag">CDN</span>
+                <span class="tag">Compilers</span>
+                <span class="tag">Test Automation</span>
+              </div>
+            </div>
+            
+            <div class="skill-category-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="skill-category-icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h3>Software Engineering</h3>
+              <div class="skill-tags">
+                <span class="tag">Code Review</span>
+                <span class="tag">Design Patterns</span>
+                <span class="tag">Agile Development</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">Microservices</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <div class="title-container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Featured Projects</h2>
+            <div class="floating-code-animation" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+              <div class="code-block block-1">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+              </div>
+              <div class="code-block block-2">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+              </div>
+              <div class="code-block block-3">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+              </div>
+              <div class="connecting-line line-1"></div>
+              <div class="connecting-line line-2"></div>
+              <div class="code-pulse"></div>
+            </div>
+          </div>
+          
+          <!-- Project Filter Buttons -->
+          <div class="project-filters" data-aos="fade-up" data-aos-duration="800">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml-ai">Machine Learning and AI</button>
+            <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+            <button class="filter-btn" data-filter="2d-game">2D-Game</button>
+          </div>
+          
+          <div class="projects-grid">
+            <div class="project-card animate-on-hover" data-aos="fade-up" data-aos-duration="800" data-category="ml-ai">
+              <div class="project-image">
+                <div class="video-container" id="quant-video-container">
+                  <video 
+                    class="project-video"
+                    muted 
+                    autoplay 
+                    loop 
+                    playsinline
+                    preload="auto"
+                    poster="assets/images/project3.jpg"
+                    style="object-fit: cover;">
+                    <source src="assets/images/project11.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="play-button-overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title"
+                    >Quantitative Stock Analysis Platform</h3
+                  >
+                  <span class="project-period">March 2025 - Present</span>
+                </div>
+                <p class="project-description">
+                  Developed a Flask API to deliver ML-driven stock predictions and financial insights. Built LightGBM models using RSI, MACD, and Bollinger Bands from Alpaca data. Optimized inference with Joblib for real-time performance.
+                </p>
+                <div class="project-tags tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Flask</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">Scikit-learn/LightGBM</span>
+                  <span class="tag">Alpaca API</span>
+                  <span class="tag">Kotlin, Jetpack Compose</span>
+                </div>
+                <a
+                  href="https://github.com/demoncoder-crypto/Rl-inforced-quant-Android.git"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View project</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-hover" data-aos="fade-up" data-aos-duration="800" data-category="ml-ai">
+              <div class="project-image">
+                <img
+                  src="assets/images/project2.jpg"
+                  alt="Multi-Camera Tracking System"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title"
+                    >Multi-Camera Real-Time Tracking System</h3
+                  >
+                  <span class="project-period">Dec 2024 - Feb 2025</span>
+                </div>
+                <p class="project-description">
+                  Implemented YOLOv5 and DeepSORT to detect and track subjects
+                  across multiple camera feeds simultaneously. Devised a mechanism
+                  to automatically close inactive feeds, optimizing resources.
+                  Reduced processing time by 30%.
+                </p>
+                <div class="project-tags tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">YOLOv5</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">DeepSORT</span>
+                  <span class="tag">Docker</span>
+                </div>
+                <a
+                  href="https://github.com/demoncoder-crypto/Surveillance-yolo.git"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View project</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-hover" data-aos="fade-up" data-aos-duration="800" data-category="full-stack">
+              <div class="project-image">
+                <div class="video-container">
+                  <video 
+                    class="project-video"
+                    muted 
+                    autoplay 
+                    loop 
+                    playsinline
+                    preload="auto"
+                    poster="assets/images/project1.jpg"
+                    style="object-fit: cover;">
+                    <source src="assets/images/project1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="play-button-overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Full-Stack E-Commerce Platform</h3>
+                  <span class="project-period">Aug - Dec 2024</span>
+                </div>
+                <p class="project-description">
+                  A comprehensive e-commerce solution with robust RESTful APIs,
+                  efficient MongoDB schemas, JWT authentication, and load balancing
+                  techniques for handling multiple simultaneous requests.
+                </p>
+                <div class="project-tags tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Apache Spark</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Kubernetes</span>
+                </div>
+                <a
+                  href="https://github.com/demoncoder-crypto/Ecommerce-platform.git"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View project</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-hover" data-aos="fade-up" data-aos-duration="800" data-category="ml-ai">
+              <div class="project-image">
+                <img
+                  src="assets/images/Project4.png"
+                  alt="Food Donation System"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Deeplense_gravitational-Images</h3>
+                  <span class="project-period">Jan 2025 - March 2025</span>
+                </div>
+                <p class="project-description">
+                  The primary goal is to demonstrate whether incorporating physics-inspired architectural choices into the CNN design can lead to improved classification performance compared to a standard deep learning model (ResNet) and an ensemble approach for this specific astrophysics task. The comprehensive evaluation framework allows for a quantitative comparison of the different models.
+                </p>
+                <div class="project-tags tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">NumPy</span>
+                  <span class="tag">Scikit-learn</span>
+                  <span class="tag">Matplotlib</span>
+                </div>
+                <a
+                  href="https://github.com/demoncoder-crypto/Deeplense_gravitational-Images"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View project</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-hover" data-aos="fade-up" data-aos-duration="800" data-category="2d-game">
+              <div class="project-image">
+                <div class="video-container">
+                  <video 
+                    class="project-video"
+                    muted 
+                    autoplay 
+                    loop 
+                    playsinline
+                    preload="auto"
+                    poster="assets/images/project5.jpg"
+                    style="object-fit: cover;">
+                    <source src="assets/images/project5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="play-button-overlay">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Interactive Casino Platform Development</h3>
+                  <span class="project-period">Jan - Jun 2023</span>
+                </div>
+                <p class="project-description">
+                  Designed and implemented a complete iGaming platform with three distinct casino games (slots, roulette, and cards) using HTML5, CSS3, and JavaScript. Created sophisticated 3D animations including card flipping, roulette wheel spinning, and slot reels using CSS transforms and keyframe animations, ensuring smooth 60fps performance. Developed an intuitive, responsive interface that adapts to different screen sizes while maintaining animation quality and realistic gameplay.
+                </p>
+                <div class="project-tags tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">3D Animation</span>
+                  <span class="tag">Responsive Design</span>
+                  <span class="tag">UX/UI</span>
+                </div>
+                <a
+                  href="https://github.com/demoncoder-crypto/Interactive-Rive-Animations-for-iGaming"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <span>View project</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scroll Indicator Dots -->
+          <div class="scroll-indicator" data-aos="fade-up" data-aos-duration="800">
+            <div class="scroll-dot active" data-index="0"></div>
+            <div class="scroll-dot" data-index="1"></div>
+            <div class="scroll-dot" data-index="2"></div>
+            <div class="scroll-dot" data-index="3"></div>
+            <div class="scroll-dot" data-index="4"></div>
+          </div>
+        </section>
+
+        <!-- Open Source Section -->
+        <section id="open-source">
+          <div class="title-container">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Open Source Contributions</h2>
+            <div class="code-animation" data-aos="fade-left" data-aos-duration="700">
+              <div class="code-terminal">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-cursor"></div>
+              </div>
+            </div>
+          </div>
+          
+          <p class="os-more-info" data-aos="fade-up" data-aos-duration="800">
+            Many more contributions mentioned in my <a href="https://github.com/demoncoder-crypto/" target="_blank">GitHub</a>
+          </p>
+          
+          <div class="os-intro" data-aos="fade-up" data-aos-duration="800">
+            
+          </div>
+          
+          <div class="os-projects">
+            <div class="os-project" data-aos="fade-up" data-aos-duration="800">
+              <div class="os-project-header">
+                <div class="os-project-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="os-project-info">
+                  <h3>DeepMind Torax(Google)</h3>
+                  <div class="os-project-meta">
+                    <span><i class="fas fa-star"></i> 413</span>
+                    <span><i class="fas fa-code-branch"></i> 50</span>
+                  </div>
+                </div>
+              </div>
+              <p class="os-project-description">
+                Contributed to DeePMind Torax model optimization library, built using JAX so simulations run quickly on GPUs/TPUs and can be easily plugged into machine learning models to help scientists figure out how to control the plasma better.
+              </p>
+              <div class="os-contributions">
+                <div class="os-contribution">
+                  <span class="os-pr-number">#884(Merged)</span>
+                  <p>Enhanced ion heat source computation by integrating an absorption_fraction parameter and external power injection tracking, standardizing Q fusion calculations across modules.</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#869(Merged)</span>
+                  <p>Enhanced source model validation by blocking concurrent bremsstrahlung and Mavrin activation, eliminating double-counting of losses.</p>
+                </div>
+              </div>              
+            </div>
+            
+            <div class="os-project" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="os-project-header">
+                <div class="os-project-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="os-project-info">
+                  <h3>Neuroinformatics-unit/movement</h3>
+                  <div class="os-project-meta">
+                    <span><i class="fas fa-star"></i> 161</span>
+                    <span><i class="fas fa-code-branch"></i> 55</span>
+                  </div>
+                </div>
+              </div>
+              <p class="os-project-description">
+                Movement aims to provide a consistent modular interface to analyse pose tracks, allowing steps such as data cleaning, visualisation and motion quantification. We aim to support a range of pose estimation packages, along with 2D or 3D tracking of single or multiple animals.
+              </p>
+              <div class="os-contributions">
+                <div class="os-contribution">
+                  <span class="os-pr-number">#514</span>
+                  <p>Implemented compute_straightness_index to measure trajectory complexity based on path straightness. Added unit tests and an example to validate and demonstrate its functionality. Updated package initialization to seamlessly expose the new function.
+                    .</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#531</span>
+                  <p>Added bidirectional option to filter_by_displacement, enabling displacement checks in both directions. Edge cases with oscillating points.</p>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="os-project" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+              <div class="os-project-header">
+                <div class="os-project-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="os-project-info">
+                  <h3>Gemini generative Ai</h3>
+                  <div class="os-project-meta">
+                    <span><i class="fas fa-star"></i> 1.3k</span>
+                    <span><i class="fas fa-code-branch"></i> 295</span>
+                  </div>
+                </div>
+              </div>
+              <p class="os-project-description">
+                Contributed to Gemini(Generative ai Python And Genrative AI Js) support and documentation, added comprehensive documentation, and implemented pruning algorithms..
+              </p>
+              <div class="os-contributions">
+                <div class="os-contribution">
+                  <span class="os-pr-number">#409</span>
+                  <p>Support Application Default Credentials</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#401</span>
+                  <p> Enhance generateContentStream with streamCallbacks support. Fixes #322.</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#390</span>
+                  <p>  Add custom fetch and httpAgent support</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#615</span>
+                  <p> Add min_p #608 .</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#614</span>
+                  <p> [Ferature Request] Support Google ModelGarden Models #567.</p>
+                </div>
+                <div class="os-contribution">
+                  <span class="os-pr-number">#613</span>
+                  <p> Add ToolConfig as Part of Live API Setup #558 Open.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Banner Section -->
+        <section class="footer-banner">
+          <div class="container">
+            <h2>Let's Work Together!</h2>
+            <p>
+              If you have a project or simply want to say hello, feel free to reach
+              out.
+            </p>
+            <a
+              href="mailto:dhillonprabhjitsingh@gmail.com"
+              class="btn btn-primary"
+            >Contact Me</a>
+          </div>
+          <svg class="wave" viewBox="0 0 1440 320">
+            <path
+              fill="#e0f2fe"
+              fill-opacity="1"
+              d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,202.7C672,224,768,256,864,240C960,224,1056,160,1152,149.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </section>
+
+        <!-- New Cool Stuff Section -->
+        <section class="cool-stuff">
+          <div class="container">
+            <h2>Follow Me & Stay Updated</h2>
+            <p>
+              Connect with me on social media for the latest updates, tutorials, and
+              cool tech insights.
+            </p>
+            <div class="social-cards">
+              <a
+                href="https://github.com/demoncoder-crypto/"
+                target="_blank"
+                class="social-card"
+              >
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/prabhjit-singh-dhillon-a508b48a/"
+                target="_blank"
+                class="social-card"
+              >
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://x.com/PrabhjitDh45118"
+                target="_blank"
+                class="social-card"
+              >
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+              <a
+                href="https://wa.me/919056431046"
+                target="_blank"
+                class="social-card"
+              >
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>© 2025 Prabhjit Singh Dhillon. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Animation Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Initialize AOS animations
+      AOS.init({
+        once: false,
+        mirror: true,
+        anchorPlacement: 'top-bottom'
+      });
+
+      // Initialize particles.js
+      if (document.getElementById('particles-js')) {
+        particlesJS('particles-js', {
+          particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#3b82f6" },
+            opacity: { value: 0.5, random: false },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 150, color: "#3b82f6", opacity: 0.4, width: 1 }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "grab" },
+              onclick: { enable: true, mode: "push" }
+            }
+          }
+        });
+      }
+
+      // Typing animation
+      document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('typing-text')) {
+          var typed = new Typed('#typing-text', {
+            strings: [
+              'Machine Learning Engineer',
+              'Full Stack Developer',
+              'Crypto Enthusiast ',
+              'Problem Solver'
+            ],
+            typeSpeed: 60,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true,
+            showCursor: false
+          });
+        }
+        
+        // Removed diffusion model text animation code
+        
+        // Fixed skill bar animation code
+        const animateSkills = function() {
+          document.querySelectorAll('.skill-bar-fill').forEach(skill => {
+            const targetWidth = skill.getAttribute('data-width') || skill.parentElement.parentElement.querySelector('.skill-bar-percentage').textContent;
+            skill.style.width = targetWidth;
+          });
+        };
+
+        // Check if we need to create the awesome cloud
+        if (!document.querySelector('.about-awesome-cloud')) {
+          const aboutSection = document.getElementById('about');
+          const sectionTitle = aboutSection.querySelector('.section-title');
+          
+          if (sectionTitle && !aboutSection.querySelector('.about-awesome-cloud')) {
+            const awesomeCloud = document.createElement('div');
+            awesomeCloud.className = 'about-awesome-cloud';
+            awesomeCloud.textContent = 'Cause I am awesome';
+            aboutSection.insertBefore(awesomeCloud, sectionTitle.nextSibling);
+          }
+        }
+
+        // Scroll progress bar
+        const scrollProgress = document.getElementById('scrollProgressBar');
+        window.addEventListener('scroll', function() {
+          const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scrollPercent = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = scrollPercent + '%';
+        });
+
+        // Observe skill sections for animation
+        if (typeof IntersectionObserver !== 'undefined') {
+          const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                animateSkills();
+                skillObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1 });
+
+          document.querySelectorAll('.skill-category').forEach(section => {
+            skillObserver.observe(section);
+          });
+        } else {
+          // Fallback for browsers that don't support IntersectionObserver
+          animateSkills();
+        }
+
+        // Initialize tilt effect on project cards
+        if (typeof VanillaTilt !== 'undefined') {
+            VanillaTilt.init(document.querySelectorAll(".project-card"), {
+                max: 5,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2,
+            });
+        }
+
+        // Simplified mouse trail effect
+        const trail = document.createElement('div');
+        trail.className = 'mouse-trail';
+        document.body.appendChild(trail);
+        
+        let mouseX = 0, mouseY = 0;
+        
+        document.addEventListener('mousemove', function(e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+            
+            // Set position directly
+            trail.style.left = mouseX + 'px';
+            trail.style.top = mouseY + 'px';
+        });
+        
+        // Parallax effect for section backgrounds
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const scrollPosition = window.scrollY;
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition > sectionTop - window.innerHeight && 
+                    scrollPosition < sectionTop + sectionHeight) {
+                    const yPos = (scrollPosition - sectionTop) * 0.1;
+                    section.querySelector('::before') && 
+                    (section.querySelector('::before').style.transform = `translateY(${yPos}px)`);
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - 80, // Adjust offset for header
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav link
+                document.querySelectorAll('nav a').forEach(navLink => {
+                    navLink.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const currentId = section.getAttribute('id');
+                    document.querySelectorAll('nav a').forEach(navLink => {
+                        navLink.classList.remove('active');
+                        if (navLink.getAttribute('href') === '#' + currentId) {
+                            navLink.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+      });
+
+      // Function to ensure videos play correctly on all browsers
+      document.addEventListener('DOMContentLoaded', function() {
+        const videoContainers = document.querySelectorAll('.video-container');
+        
+        // Add CSS for the play button overlay
+        const style = document.createElement('style');
+        style.textContent = `
+          .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+          .play-button-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+          .play-button-overlay.visible {
+            opacity: 1;
+          }
+          .play-button-overlay i {
+            font-size: 3rem;
+            color: white;
+          }
+        `;
+        document.head.appendChild(style);
+        
+        // Initialize each video container
+        videoContainers.forEach(container => {
+          const video = container.querySelector('video');
+          const overlay = container.querySelector('.play-button-overlay');
+          
+          // Hide overlay initially
+          overlay.style.display = 'none';
+          
+          // Force muted for autoplay
+          video.muted = true;
+          
+          // Try to play the video
+          const playVideo = function() {
+            const playPromise = video.play();
+            
+            if (playPromise !== undefined) {
+              playPromise.then(_ => {
+                // Autoplay successful - hide overlay
+                overlay.style.display = 'none';
+                console.log('Video playing automatically');
+              })
+              .catch(error => {
+                // Autoplay failed - show overlay
+                console.error('Autoplay prevented:', error);
+                overlay.style.display = 'flex';
+                overlay.classList.add('visible');
+              });
+            }
+          };
+          
+          // Try to play immediately
+          playVideo();
+          
+          // Try again when metadata is loaded
+          video.addEventListener('loadedmetadata', function() {
+            playVideo();
+          });
+          
+          // Add click handler to overlay
+          overlay.addEventListener('click', function(e) {
+            e.stopPropagation();
+            video.play()
+              .then(() => {
+                overlay.style.display = 'none';
+              })
+              .catch(err => {
+                console.error('Still cannot play video after click:', err);
+              });
+          });
+          
+          // Also add click handler to the container, *except* for specific looping videos
+          const videoSrc = video.querySelector('source')?.getAttribute('src');
+          if (container.id !== 'quant-video-container' && !(videoSrc && (videoSrc.includes('project1.mp4') || videoSrc.includes('project5.mp4')))) {
+            container.addEventListener('click', function() {
+              if (video.paused) {
+                video.play();
+                overlay.style.display = 'none';
+              } else {
+                video.pause();
+                overlay.style.display = 'flex';
+                overlay.classList.add('visible');
+              }
+            });
+          }
+        });
+        
+        // Try to play videos again after user interaction with the page
+        const tryPlayVideosAfterInteraction = function() {
+          document.querySelectorAll('.project-video').forEach(video => {
+            if (video.paused) {
+              video.play().catch(() => {});
+            }
+          });
+          // Remove event listeners after first interaction
+          document.removeEventListener('click', tryPlayVideosAfterInteraction);
+          document.removeEventListener('scroll', tryPlayVideosAfterInteraction);
+        };
+        
+        // Add event listeners for user interaction
+        document.addEventListener('click', tryPlayVideosAfterInteraction);
+        document.addEventListener('scroll', tryPlayVideosAfterInteraction);
+      });
+    </script>
+  </body>
+</html>
