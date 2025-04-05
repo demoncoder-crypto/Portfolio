@@ -32,8 +32,8 @@
           <nav id="nav">
             <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
             <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-            <a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a>
             <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a>
             <a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a>
             <a href="#open-source" class="nav-link"><i class="fas fa-code-branch"></i> Open Source</a>
             <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
@@ -186,30 +186,6 @@
               <div class="profile-info">
                 <h3>Prabhjit Singh Dhillon</h3>
                 <p class="profile-location">Machine Learning Engineer</p>
-                <p class="profile-location">Based in Ludhiana, Punjab, India</p>
-                <div class="profile-contact">
-                  <a href="mailto:dhillonprabhjitsingh@gmail.com"
-                    ><i class="fas fa-envelope"></i>
-                    dhillonprabhjitsingh@gmail.com</a
-                  >
-                  <a href="tel:+919056431046"
-                    ><i class="fas fa-phone"></i> +91-9056431046</a
-                  >
-                </div>
-                <div class="social-links">
-                  <a
-                    href="https://github.com/"
-                    class="social-link"
-                    target="_blank"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    href="https://linkedin.com/"
-                    class="social-link"
-                    target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </div>
               </div>
             </div>
             <div class="about-content">
@@ -725,7 +701,6 @@
                     loop 
                     playsinline
                     preload="auto"
-                    poster="assets/images/project1.jpg"
                     style="object-fit: cover;">
                     <source src="assets/images/project1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -766,7 +741,7 @@
             <div class="project-card animate-on-hover" data-aos="fade-up" data-aos-duration="800" data-category="ml-ai">
               <div class="project-image">
                 <img
-                  src="assets/images/Project4.png"
+                  src="assets/images/project4.png"
                   alt="Food Donation System"
                 />
               </div>
@@ -806,7 +781,6 @@
                     loop 
                     playsinline
                     preload="auto"
-                    poster="assets/images/project5.jpg"
                     style="object-fit: cover;">
                     <source src="assets/images/project5.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -869,7 +843,7 @@
           </div>
           
           <p class="os-more-info" data-aos="fade-up" data-aos-duration="800">
-            Many more contributions mentioned in my <a href="https://github.com/demoncoder-crypto/" target="_blank">GitHub</a>
+            Many more contributions in different repositories, check my <a href="https://github.com/demoncoder-crypto/" target="_blank">GitHub</a>
           </p>
           
           <div class="os-intro" data-aos="fade-up" data-aos-duration="800">
@@ -982,26 +956,30 @@
           </div>
         </section>
 
-        <!-- Footer Banner Section -->
-        <section class="footer-banner">
+        <!-- Contact Section -->
+        <section id="contact">
           <div class="container">
-            <h2>Let's Work Together!</h2>
-            <p>
-              If you have a project or simply want to say hello, feel free to reach
-              out.
-            </p>
-            <a
-              href="mailto:dhillonprabhjitsingh@gmail.com"
-              class="btn btn-primary"
-            >Contact Me</a>
+            <div class="title-container">
+              <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Contact Me</h2>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <h3>Get In Touch</h3>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!</p>
+                <ul class="contact-details">
+                  <li><i class="fas fa-envelope"></i> <a href="mailto:dhillonprabhjitsingh@gmail.com">dhillonprabhjitsingh@gmail.com</a></li>
+                  <li><i class="fas fa-phone"></i> <a href="tel:+919056431046">+91-9056431046</a></li>
+                </ul>
+              </div>
+
+              <div class="contact-action" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                <h3>Send Me a Message</h3>
+                <p>Have a question or proposal, or just want to say hello? Go ahead.</p>
+                <a href="mailto:dhillonprabhjitsingh@gmail.com" class="btn btn-primary contact-button">Say Hello <i class="fas fa-paper-plane"></i></a>
+              </div>
+            </div>
           </div>
-          <svg class="wave" viewBox="0 0 1440 320">
-            <path
-              fill="#e0f2fe"
-              fill-opacity="1"
-              d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,202.7C672,224,768,256,864,240C960,224,1056,160,1152,149.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            ></path>
-          </svg>
         </section>
 
         <!-- New Cool Stuff Section -->
@@ -1051,6 +1029,7 @@
       </div>
     </main>
 
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
@@ -1063,307 +1042,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      // Initialize AOS animations
-      AOS.init({
-        once: false,
-        mirror: true,
-        anchorPlacement: 'top-bottom'
-      });
-
-      // Initialize particles.js
-      if (document.getElementById('particles-js')) {
-        particlesJS('particles-js', {
-          particles: {
-            number: { value: 80, density: { enable: true, value_area: 800 } },
-            color: { value: "#3b82f6" },
-            opacity: { value: 0.5, random: false },
-            size: { value: 3, random: true },
-            line_linked: { enable: true, distance: 150, color: "#3b82f6", opacity: 0.4, width: 1 }
-          },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: { enable: true, mode: "grab" },
-              onclick: { enable: true, mode: "push" }
-            }
-          }
-        });
-      }
-
-      // Typing animation
-      document.addEventListener('DOMContentLoaded', function() {
-        if (document.getElementById('typing-text')) {
-          var typed = new Typed('#typing-text', {
-            strings: [
-              'Machine Learning Engineer',
-              'Full Stack Developer',
-              'Crypto Enthusiast ',
-              'Problem Solver'
-            ],
-            typeSpeed: 60,
-            backSpeed: 30,
-            backDelay: 1500,
-            loop: true,
-            showCursor: false
-          });
-        }
-        
-        // Removed diffusion model text animation code
-        
-        // Fixed skill bar animation code
-        const animateSkills = function() {
-          document.querySelectorAll('.skill-bar-fill').forEach(skill => {
-            const targetWidth = skill.getAttribute('data-width') || skill.parentElement.parentElement.querySelector('.skill-bar-percentage').textContent;
-            skill.style.width = targetWidth;
-          });
-        };
-
-        // Check if we need to create the awesome cloud
-        if (!document.querySelector('.about-awesome-cloud')) {
-          const aboutSection = document.getElementById('about');
-          const sectionTitle = aboutSection.querySelector('.section-title');
-          
-          if (sectionTitle && !aboutSection.querySelector('.about-awesome-cloud')) {
-            const awesomeCloud = document.createElement('div');
-            awesomeCloud.className = 'about-awesome-cloud';
-            awesomeCloud.textContent = 'Cause I am awesome';
-            aboutSection.insertBefore(awesomeCloud, sectionTitle.nextSibling);
-          }
-        }
-
-        // Scroll progress bar
-        const scrollProgress = document.getElementById('scrollProgressBar');
-        window.addEventListener('scroll', function() {
-          const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-          const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          const scrollPercent = (scrollTop / scrollHeight) * 100;
-          scrollProgress.style.width = scrollPercent + '%';
-        });
-
-        // Observe skill sections for animation
-        if (typeof IntersectionObserver !== 'undefined') {
-          const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                animateSkills();
-                skillObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-
-          document.querySelectorAll('.skill-category').forEach(section => {
-            skillObserver.observe(section);
-          });
-        } else {
-          // Fallback for browsers that don't support IntersectionObserver
-          animateSkills();
-        }
-
-        // Initialize tilt effect on project cards
-        if (typeof VanillaTilt !== 'undefined') {
-            VanillaTilt.init(document.querySelectorAll(".project-card"), {
-                max: 5,
-                speed: 400,
-                glare: true,
-                "max-glare": 0.2,
-            });
-        }
-
-        // Simplified mouse trail effect
-        const trail = document.createElement('div');
-        trail.className = 'mouse-trail';
-        document.body.appendChild(trail);
-        
-        let mouseX = 0, mouseY = 0;
-        
-        document.addEventListener('mousemove', function(e) {
-            mouseX = e.pageX;
-            mouseY = e.pageY;
-            
-            // Set position directly
-            trail.style.left = mouseX + 'px';
-            trail.style.top = mouseY + 'px';
-        });
-        
-        // Parallax effect for section backgrounds
-        document.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const scrollPosition = window.scrollY;
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                
-                if (scrollPosition > sectionTop - window.innerHeight && 
-                    scrollPosition < sectionTop + sectionHeight) {
-                    const yPos = (scrollPosition - sectionTop) * 0.1;
-                    section.querySelector('::before') && 
-                    (section.querySelector('::before').style.transform = `translateY(${yPos}px)`);
-                }
-            });
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetSection.offsetTop - 80, // Adjust offset for header
-                    behavior: 'smooth'
-                });
-                
-                // Update active nav link
-                document.querySelectorAll('nav a').forEach(navLink => {
-                    navLink.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-        });
-        
-        // Update active nav link on scroll
-        window.addEventListener('scroll', function() {
-            const scrollPosition = window.scrollY;
-            
-            document.querySelectorAll('section').forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.offsetHeight;
-                
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    const currentId = section.getAttribute('id');
-                    document.querySelectorAll('nav a').forEach(navLink => {
-                        navLink.classList.remove('active');
-                        if (navLink.getAttribute('href') === '#' + currentId) {
-                            navLink.classList.add('active');
-                        }
-                    });
-                }
-            });
-        });
-      });
-
-      // Function to ensure videos play correctly on all browsers
-      document.addEventListener('DOMContentLoaded', function() {
-        const videoContainers = document.querySelectorAll('.video-container');
-        
-        // Add CSS for the play button overlay
-        const style = document.createElement('style');
-        style.textContent = `
-          .video-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-          }
-          .play-button-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-          }
-          .play-button-overlay.visible {
-            opacity: 1;
-          }
-          .play-button-overlay i {
-            font-size: 3rem;
-            color: white;
-          }
-        `;
-        document.head.appendChild(style);
-        
-        // Initialize each video container
-        videoContainers.forEach(container => {
-          const video = container.querySelector('video');
-          const overlay = container.querySelector('.play-button-overlay');
-          
-          // Hide overlay initially
-          overlay.style.display = 'none';
-          
-          // Force muted for autoplay
-          video.muted = true;
-          
-          // Try to play the video
-          const playVideo = function() {
-            const playPromise = video.play();
-            
-            if (playPromise !== undefined) {
-              playPromise.then(_ => {
-                // Autoplay successful - hide overlay
-                overlay.style.display = 'none';
-                console.log('Video playing automatically');
-              })
-              .catch(error => {
-                // Autoplay failed - show overlay
-                console.error('Autoplay prevented:', error);
-                overlay.style.display = 'flex';
-                overlay.classList.add('visible');
-              });
-            }
-          };
-          
-          // Try to play immediately
-          playVideo();
-          
-          // Try again when metadata is loaded
-          video.addEventListener('loadedmetadata', function() {
-            playVideo();
-          });
-          
-          // Add click handler to overlay
-          overlay.addEventListener('click', function(e) {
-            e.stopPropagation();
-            video.play()
-              .then(() => {
-                overlay.style.display = 'none';
-              })
-              .catch(err => {
-                console.error('Still cannot play video after click:', err);
-              });
-          });
-          
-          // Also add click handler to the container, *except* for specific looping videos
-          const videoSrc = video.querySelector('source')?.getAttribute('src');
-          if (container.id !== 'quant-video-container' && !(videoSrc && (videoSrc.includes('project1.mp4') || videoSrc.includes('project5.mp4')))) {
-            container.addEventListener('click', function() {
-              if (video.paused) {
-                video.play();
-                overlay.style.display = 'none';
-              } else {
-                video.pause();
-                overlay.style.display = 'flex';
-                overlay.classList.add('visible');
-              }
-            });
-          }
-        });
-        
-        // Try to play videos again after user interaction with the page
-        const tryPlayVideosAfterInteraction = function() {
-          document.querySelectorAll('.project-video').forEach(video => {
-            if (video.paused) {
-              video.play().catch(() => {});
-            }
-          });
-          // Remove event listeners after first interaction
-          document.removeEventListener('click', tryPlayVideosAfterInteraction);
-          document.removeEventListener('scroll', tryPlayVideosAfterInteraction);
-        };
-        
-        // Add event listeners for user interaction
-        document.addEventListener('click', tryPlayVideosAfterInteraction);
-        document.addEventListener('scroll', tryPlayVideosAfterInteraction);
-      });
-    </script>
   </body>
 </html>

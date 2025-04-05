@@ -873,45 +873,182 @@ body.dark-mode .project-link:hover i {
   }
 }
 
-/* --- New Footer Banner Styles --- */
-.footer-banner {
+/* --- Contact Section Styles --- */
+#contact {
+  padding: 60px 0;
   position: relative;
-  background: linear-gradient(to right, #e0f2fe, #cffafe);
-  padding: 3rem 0 0;
-  text-align: center;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.footer-banner h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff, #f0f9ff, #f8fafc);
+  background-size: 400% 400%;
+  animation: subtleGradientShift 20s ease infinite;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+body.dark-mode #contact::before {
+  background: linear-gradient(135deg, #1a233a, #1e293b, #293651, #1a233a);
+  background-size: 400% 400%;
+  animation: subtleGradientShift 20s ease infinite;
+}
+
+@keyframes subtleGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body.dark-mode #contact {
+  background-color: #1a233a;
+}
+
+#contact .title-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Add animated underline to contact title */
+#contact .section-title {
+  position: relative; /* Needed for pseudo-element */
+  display: inline-block; /* Fit content width */
+  padding-bottom: 10px; /* Space for underline */
+}
+
+#contact .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-light), var(--secondary-light));
+  transition: width 0.6s ease-out; /* Transition for width */
+  transition-delay: 0.3s; /* Delay the animation start slightly */
+}
+
+/* Trigger animation when AOS makes title visible */
+#contact .section-title[data-aos="fade-down"].aos-animate::after {
+  width: 70%; /* Animate width to 70% */
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info h3,
+.contact-action h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
   color: var(--primary-light);
 }
 
-.footer-banner p {
+.contact-info p,
+.contact-action p {
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+body.dark-mode .contact-info p,
+body.dark-mode .contact-action p {
+  color: #94a3b8;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.contact-details li i {
+  color: var(--primary-light);
+  margin-right: 15px;
+  width: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-details li:hover i {
+  transform: scale(1.2);
+  color: var(--secondary-light);
+}
+
+.contact-details li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details li a:hover {
+  color: var(--primary-light);
+}
+
+.contact-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-socials .social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #eef2ff;
+  color: var(--primary-light);
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: var(--text-light);
+  transition: all 0.3s ease;
 }
 
-.footer-banner .btn {
-  padding: 1rem 2rem;
+body.dark-mode .contact-socials .social-link {
+  background-color: #334155;
+}
+
+.contact-socials .social-link:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.2);
+}
+
+.contact-action {
+  background-color: var(--card-light);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+body.dark-mode .contact-action {
+  background-color: var(--card-dark);
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
 }
 
-.footer-banner .wave {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: -5px;
-}
-
-body.dark-mode .footer-banner {
-  background: linear-gradient(to right, #334155, #1e293b);
-}
-
-body.dark-mode .footer-banner h2,
-body.dark-mode .footer-banner p {
-  color: var(--text-dark);
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
 }
 
 /* --- New Cool Stuff Section --- */
@@ -1879,15 +2016,15 @@ body.dark-mode .code-cursor {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem; /* Reduced margin */
+  margin-bottom: 1rem;
 }
 
 .os-more-info {
-  font-size: 1.1rem; /* Smaller than section title */
+  font-size: 1.1rem;
   color: #64748b;
-  margin-top: -1rem; /* Adjust spacing below title */
+  margin-top: -1rem;
   margin-bottom: 2rem;
-  text-align: center; /* Center the text */
+  text-align: center;
 }
 
 body.dark-mode .os-more-info {
